@@ -1,77 +1,104 @@
 body {
   font-family: 'Roboto', sans-serif;
   margin: 0;
-  padding: 0;
-  background-color: #f0f0f0;
+  background-color: #f2f2f2;
   color: #333;
 }
 
 header {
-  background-color: #264653;
-  color: #eee;
-  padding: 1rem;
+  background-color: #1f4f6f;
+  color: white;
   text-align: center;
 }
 
 #course-title {
-  display: block; 
-  font-size: 1.5rem;
-  margin-bottom: 0.5rem;
+  margin: 0;
+  padding: 1rem;
+  font-size: 1.4rem;
 }
-
 nav {
   display: flex;
-  justify-content: center; 
-  gap: 2rem;
-  background-color: #2a2a2a;
+  justify-content: space-around;
+  background-color: #2f2f2f;
   padding: 0.5rem 0;
 }
 
 nav a {
-  color: #eee;
+  color: white;
   text-decoration: none;
-  padding: 0.5rem 1rem;
 }
 
 nav a:hover {
-  background-color: #2a9d8f;
-  color: white;
-  border-radius: 5px;
+  text-decoration: underline;
 }
 
 main {
-  max-width: 800px;
+  max-width: 1000px;
   margin: 2rem auto;
   padding: 0 1rem;
 }
 
-.card {
-  background-color: white;
-  margin: 1rem 0;
-  padding: 1rem;
-  border-radius: 5px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+.student-name {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
 }
 
 .cards-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 1rem;
-  max-width: 900px;
-  margin: 2rem auto;
+  grid-template-columns: 2fr 1fr;
+  gap: 1.5rem;
 }
 
-.card img {
+.card {
+  background-color: white;
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.card-title {
+  background-color: #1f4f6f;
+  color: white;
+  padding: 0.6rem;
+  margin: 0;
+  text-align: center;
+}
+
+.about-grid,
+.location-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.about-grid img,
+.location-grid img {
   max-width: 100%;
-  height: auto;
-  display: block;
-  margin: 0.5rem 0;
+  border-radius: 4px;
+}
+
+.location {
+  text-align: center;
+  font-weight: bold;
+  margin: 0;
+}
+
+.resources {
+  list-style: disc;
+  padding: 1rem 2rem;
+}
+
+.resources a {
+  color: #1f4f6f;
 }
 
 footer {
-  background-color: #264653;
-  color: #fff;
+  background-color: #1f4f6f;
+  color: white;
   text-align: center;
-  padding: 1rem 0;
+  padding: 1rem;
+  margin-top: 2rem;
   font-size: 0.9rem;
 }

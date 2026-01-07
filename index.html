@@ -4,65 +4,74 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>WDD 131 – Dynamic Web Fundamentals – Popol Elonda</title>
-  <meta name="description" content="WDD 131 – Dynamic Web Fundamentals Popol Elonda | explores the essential concepts and techniques for building interactive and responsive websites">
+  <meta name="description" content="WDD 131 – Dynamic Web Fundamentals Popol Elonda">
   <meta name="author" content="Popol Elonda">
-  
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-  <!-- Google Font stylesheet -->
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="styles/base.css">
   <script src="scripts/getdates.js" defer></script>
 </head>
+
 <body>
   <header>
-    <span id="course-title">WDD 131 – Dynamic Web Fundamentals</span>
+    <h1 id="course-title">WDD 131: Dynamic Web Fundamentals</h1>
     <nav>
       <a href="https://www.linkedin.com">LinkedIn</a>
-      <a href="https://byupw.instructure.com/">Canvas</a>
-      <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/3?lang=eng&id=p7#p7">Scripture</a>
-      <a href="#">Final Project Folder</a>
+      <a href="https://byupw.instructure.com/">I-Learn</a>
+      <a href="https://www.churchofjesuschrist.org/study/scriptures">Scripture</a>
+      <a href="#">Final Project</a>
     </nav>
   </header>
 
   <main>
-    <h1>Popol Elonda</h1>
-    <div class="cards-container">
-        <section class="card">
-      <h2>About Me</h2>
-      <img src="images/mine.jpg" alt="popol">
-      <p>Hello, my name is Popol Elonda.
-        I am a passionate learner and a budding web developer, excited to explore the 
-        world of technology and digital design. I enjoy creating clean, functional, 
-        and visually appealing websites while constantly improving my skills in HTML, 
-        CSS, and JavaScript. I value creativity, continuous learning, and sharing knowledge with others.</p>
-        <h3>Salt Lake City, USA</h3>
-      <img src="images/saltlake.png" alt="saltlake">
-      <p>Salt Lake City is the capital and largest city of Utah, known for its stunning 
-        mountain scenery and outdoor recreation opportunities. It was founded in 1847 by 
-        Mormon pioneers and is famous for the nearby Great Salt Lake. The city is a hub for 
-        culture, business, and education, home to the University of Utah, vibrant arts, and 
-        historic landmarks. Salt Lake City also hosted the 2002 Winter Olympics, showcasing 
-        its world-class winter sports facilities.</p>
-        </section>
+    <h2 class="student-name">Popol Elonda</h2>
 
-    <section class="card">
-      <h2>Web Dev Resources</h2>
-      <ul>
-        <li><a href="#">Dev.to Community</a></li>
-        <li><a href="#">Smashing Magazine</a></li>
-        <li><a href="#">CSS Tricks</a></li>
-        <li><a href="#">W3 Schools</a></li>
-        <li><a href="#">Udemy</a></li>
-        <li><a href="#">Lorem Picsum</a></li>
-      </ul>
-    </section>
+    <div class="cards-container">
+      <section class="card">
+        <h3 class="card-title">About Me</h3>
+
+        <div class="about-grid">
+          <p>
+            My name is Popol Elonda. I am a passionate learner and aspiring web developer.
+            I enjoy building clean, responsive websites and improving my skills in HTML,
+            CSS, and JavaScript.
+          </p>
+
+          <img src="images/mine.jpg" alt="Portrait of Popol Elonda">
+        </div>
+
+        <h4 class="location">Salt Lake City, USA</h4>
+
+        <div class="location-grid">
+          <img src="images/saltlake.png" alt="Salt Lake City skyline">
+
+          <p>
+            Salt Lake City is the capital of Utah and is known for its mountain scenery,
+            outdoor recreation, and rich cultural history. It hosted the 2002 Winter Olympics.
+          </p>
+        </div>
+      </section>
+
+      
+      <section class="card">
+        <h3 class="card-title">Web Dev Resources</h3>
+        <ul class="resources">
+          <li><a href="#">Dev.to Community</a></li>
+          <li><a href="#">Smashing Magazine</a></li>
+          <li><a href="#">CSS Tricks</a></li>
+          <li><a href="#">W3 Schools</a></li>
+          <li><a href="#">Udemy</a></li>
+          <li><a href="#">Lorem Picsum</a></li>
+        </ul>
+      </section>
     </div>
   </main>
 
   <footer>
-    <p>&copy; <span id="currentyear"></span> Popol Elonda, Salt Lake City/USA</p>
+    <p>© <span id="currentyear"></span>  Popol Elonda  USA</p>
     <p id="lastModified"></p>
   </footer>
 </body>
