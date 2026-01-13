@@ -1,81 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="A responsive temple album showcasing beautiful LDS temples | Popol Elonda">
-    <meta name="author" content="Popol Elonda">
-    <title>Temple Album</title>
-    <link rel="stylesheet" href="styles/temples.css">
-    <link rel="stylesheet" href="styles/temples-large.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <script src="scripts/temples.js" defer></script>
+  <meta name="description" content="A responsive temple album showcasing LDS temples with semantic HTML, CSS Grid/Flexbox, and JavaScript.">
+  <meta name="author" content="Popol Elonda">
+
+  <title>Temple Album</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles/temples.css">
+  <link rel="stylesheet" href="styles/temples-large.css">
+
+  <script src="scripts/temples.js" defer></script>
 </head>
+
 <body>
-    <header>
-        <div class="header-inner">
-            <p class="site-title">Temple Album</p>
-            
-          <nav class="navigation">
-            <a href="#">Home</a>
-            <a href="#">Old</a>
-            <a href="#">New</a>
-            <a href="#">Large</a>
-            <a href="#">Small</a>
-         </nav>
-        </div>
-        </header>
-        </header>
-    </header>
-    <main>
-        <h1>Home</h1>
-        <section class="album">
-            <figure>
-            <img src="images/colonia.jpg" alt="colonia juarez mexico temple">
-            <figcaption>colonia juarez mexico temple</figcaption>
-            </figure>
-            <figure>
-            <img src="images/columbia.webp" alt="columbia river washington temple">
-            <figcaption>columbia river washington temple</figcaption>
-            </figure>
-            <figure>
-            <img src="images/columbus.jpg" alt="columbus ohio temple">
-            <figcaption>columbus ohio temple</figcaption>
-            </figure>
-            <figure>
-            <img src="images/cordoba.jpg" alt="cordoba argentina temple">
-            <figcaption>cordoba argentina temples</figcaption>
-            </figure>
-            <figure>
-            <img src="images/denver.webp" alt="denver temple">
-            <figcaption>denver temple</figcaption>
-            </figure>
-            <figure>
-            <img src="images/draper.webp" alt="draper temple">
-            <figcaption>draper temple</figcaption>
-            </figure>
-            <figure>
-            <img src="images/edmonton.webp" alt="edmonton alberta temple">
-            <figcaption>edmonton alberta temple</figcaption>
-            </figure>
-            <figure>
-            <img src="images/fortalezatemple.jpg" alt="Fortaleza Temple">
-            <figcaption>Fortaleza Temple</figcaption>
-            </figure>
-            <figure>
-            <img src="images/chicago.webp" alt="Chicago Temple">
-            <figcaption>Chicago Temple</figcaption>
-            </figure>
-        </section>
-    </main>
-    <footer>
-        <p>
-            © <span id="year"></span> | Popol Elonda | USA
-        </p>
-        <p id="lastModified"></p>
-    </footer>
+  <header>
+    <div class="header-inner">
+      <p class="site-title">Temple Album</p>
+      <button id="menu" aria-label="Menu"></button>
+    </div>
+
+    <nav class="navigation">
+      <a href="#">Home</a>
+      <a href="#">Old</a>
+      <a href="#">New</a>
+      <a href="#">Large</a>
+      <a href="#">Small</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Home</h1>
+
+    <section class="album">
+      <figure>
+        <img src="images/colonia.jpg" alt="Colonia Juárez Mexico Temple">
+        <figcaption>Colonia Juárez Mexico Temple</figcaption>
+      </figure>
+
+      <figure>
+        <img src="images/columbia.webp" alt="Columbia River Washington Temple">
+        <figcaption>Columbia River Washington Temple</figcaption>
+      </figure>
+
+      <figure>
+        <img src="images/columbus.jpg" alt="Columbus Ohio Temple">
+        <figcaption>Columbus Ohio Temple</figcaption>
+      </figure>
+
+      <figure>
+        <img src="images/cordoba.jpg" alt="Córdoba Argentina Temple">
+        <figcaption>Córdoba Argentina Temple</figcaption>
+      </figure>
+
+      <figure>
+        <img src="images/denver.webp" alt="Denver Colorado Temple">
+        <figcaption>Denver Colorado Temple</figcaption>
+      </figure>
+
+      <figure>
+        <img src="images/draper.webp" alt="Draper Utah Temple">
+        <figcaption>Draper Utah Temple</figcaption>
+      </figure>
+
+      <figure>
+        <img src="images/edmonton.webp" alt="Edmonton Alberta Temple">
+        <figcaption>Edmonton Alberta Temple</figcaption>
+      </figure>
+
+      <figure>
+        <img src="images/fortalezatemple.jpg" alt="Fortaleza Brazil Temple">
+        <figcaption>Fortaleza Brazil Temple</figcaption>
+      </figure>
+
+      <figure>
+        <img src="images/chicago.webp" alt="Chicago Illinois Temple">
+        <figcaption>Chicago Illinois Temple</figcaption>
+      </figure>
+    </section>
+  </main>
+
+  <footer>
+    <p>© <span id="year"></span> | Popol Elonda | USA</p>
+    <p id="lastModified"></p>
+  </footer>
 </body>
 </html>
