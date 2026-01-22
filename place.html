@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Madagascar</title>
+
+  <link rel="stylesheet" href="styles/place.css">
+  <script src="scripts/place.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <h1>United States</h1>
+  </header>
+
+  <picture class="hero">
+    <source srcset="images/climat.svg" media="(min-width: 768px)">
+    <img src="images/weather.webp" alt="Lemurs in Madagascar">
+  </picture>
+
+  <main>
+      <section class="card data">
+      <h2>Data</h2>
+      <ul>
+        <li><strong>Area:</strong> 9,833,520 sq km</li>
+        <li><strong>Population:</strong> 334,914,895</li>
+        <li><strong>Capital:</strong> Washington, D.C.</li>
+        <li><strong>Languages:</strong> English</li>
+        <li><strong>Currency:</strong> United States Dollar (USD)</li>
+        <li><strong>Time Zone:</strong> UTC−4 to UTC−10</li>
+        <li><strong>Calling Code:</strong> +1</li>
+        <li><strong>Internet TLD:</strong> .us</li>
+       </ul>
+    </section>
+
+    <section class="card weather">
+      <h2>Weather</h2>
+      <p>Temperature: <span id="temp">10</span> °C</p>
+      <p>Conditions: Partly Cloudy</p>
+      <p>Wind: <span id="wind">5</span> km/h</p>
+      <p>Wind Chill: <span id="chill">N/A</span></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© <span id="year"></span>Utah | Salt Lake City | USA</p>
+    <p>Last Modification: <span id="lastModified"></span></p>
+  </footer>
+</body>
+</html>

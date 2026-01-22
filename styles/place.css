@@ -1,0 +1,100 @@
+:root {
+  --red: #c8102e;
+  --green: #007a3d;
+  --white: #ffffff;
+  --dark: #222;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #eef7ee;
+  color: var(--dark);
+}
+
+/* HEADER */
+header {
+  background: var(--red);
+  color: white;
+  text-align: center;
+  padding: 1.5rem;
+}
+
+/* HERO IMAGE */
+.hero img {
+  width: 100%;
+  display: block;
+}
+
+/* MAIN (MOBILE STACK) */
+main {
+  padding: 1rem;
+  display: grid;
+  gap: 1rem;
+}
+
+/* CARDS */
+.card {
+  background: var(--white);
+  padding: 1rem;
+  border-radius: 4px;
+}
+
+.card h2 {
+  margin-bottom: 0.5rem;
+}
+
+/* LIST */
+.data ul {
+  list-style: none;
+}
+
+.data li {
+  padding: 0.25rem 0;
+}
+
+/* WEATHER ICON (DESKTOP REQUIRES ::after) */
+.weather h2::after {
+  content: " ⛅";
+}
+
+/* FOOTER */
+footer {
+  background: var(--red);
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 1rem;
+}
+
+/* =========================
+   DESKTOP VIEW (WIREFRAME)
+========================= */
+@media (min-width: 768px) {
+  main {
+    position: relative;
+    max-width: 1000px;
+    margin: auto;
+  }
+
+  .data {
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+    background: rgba(255, 255, 255, 0.9);
+    width: 280px;
+  }
+
+  .weather {
+    position: absolute;
+    bottom: 2rem;
+    right: 2rem;
+    background: rgba(255, 255, 255, 0.9);
+    width: 240px;
+  }
+}
