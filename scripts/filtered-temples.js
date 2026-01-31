@@ -1,143 +1,170 @@
-// --- Temple data (add at least 3 more objects) ---
 const temples = [
   {
-    templeName: "Colonia Juárez Mexico Temple",
-    location: "Colonia Juárez, Chihuahua, Mexico",
-    dedicated: "1999-03-06",
-    area: 6800,
-    imageUrl: "https://assets.churchofjesuschrist.org/2f/32/2f3295d3db11ecf3bfcce5b0f70f8b9b1ecf7b0b/colonia_juarez_mexico_temple.jpeg"
+    templeName: "Aba Nigeria",
+    location: "Aba, Nigeria",
+    dedicated: "2005, August, 7",
+    area: 11500,
+    imageUrl:
+      "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/aba-nigeria/400x250/aba-nigeria-temple-lds-273999-wallpaper.jpg"
   },
   {
-    templeName: "Fortaleza Brazil Temple",
-    location: "Fortaleza, Ceará, Brazil",
-    dedicated: "2019-06-02",
-    area: 36000,
-    imageUrl: "https://assets.churchofjesuschrist.org/3c/6f/3c6fbf6cdb11ecf3bfcce5b0f70f8b9b6c7ed9c5/fortaleza_brazil_temple.jpeg"
+    templeName: "Manti Utah",
+    location: "Manti, Utah, United States",
+    dedicated: "1888, May, 21",
+    area: 74792,
+    imageUrl:
+      "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/manti-utah/400x250/manti-temple-768192-wallpaper.jpg"
   },
   {
-    templeName: "Chicago Illinois Temple",
-    location: "Glenview, Illinois, USA",
-    dedicated: "1985-08-09",
-    area: 37062,
-    imageUrl: "https://assets.churchofjesuschrist.org/1f/2c/1f2c0f77db11ecf3bfcce5b0f70f8b9b4c38c2a5/chicago_illinois_temple.jpeg"
+    templeName: "Payson Utah",
+    location: "Payson, Utah, United States",
+    dedicated: "2015, June, 7",
+    area: 96630,
+    imageUrl:
+      "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/payson-utah/400x225/payson-utah-temple-exterior-1416671-wallpaper.jpg"
+  },
+  {
+    templeName: "Yigo Guam",
+    location: "Yigo, Guam",
+    dedicated: "2020, May, 2",
+    area: 6861,
+    imageUrl:
+      "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/yigo-guam/400x250/yigo_guam_temple_2.jpg"
+  },
+  {
+    templeName: "Washington D.C.",
+    location: "Kensington, Maryland, United States",
+    dedicated: "1974, November, 19",
+    area: 156558,
+    imageUrl:
+      "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/washington-dc/400x250/washington_dc_temple-exterior-2.jpeg"
+  },
+  {
+    templeName: "Lima Perú",
+    location: "Lima, Perú",
+    dedicated: "1986, January, 10",
+    area: 9600,
+    imageUrl:
+      "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/lima-peru/400x250/lima-peru-temple-evening-1075606-wallpaper.jpg"
+  },
+  {
+    templeName: "Mexico City Mexico",
+    location: "Mexico City, Mexico",
+    dedicated: "1983, December, 2",
+    area: 116642,
+    imageUrl:
+      "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/mexico-city-mexico/400x250/mexico-city-temple-exterior-1518361-wallpaper.jpg"
   },
 
-  // ✅ Add at least 3 more:
+  // ✅ Add at least 3 more temple objects:
   {
-    templeName: "Salt Lake Temple",
-    location: "Salt Lake City, Utah, USA",
-    dedicated: "1893-04-06",
+    templeName: "Salt Lake Utah",
+    location: "Salt Lake City, Utah, United States",
+    dedicated: "1893, April, 6",
     area: 382207,
-    imageUrl: "https://assets.churchofjesuschrist.org/4d/90/4d90c9acdb11ecf3bfcce5b0f70f8b9b6c0f3a25/salt_lake_temple.jpeg"
+    imageUrl:
+      "https://www.churchofjesuschrist.org/imgs/359e8ca4d15ccdefcad4b6ffc6d2acb7ed44f3a4/full/!1920%2C1080/0/default"
   },
   {
-    templeName: "Rome Italy Temple",
+    templeName: "Rome Italy",
     location: "Rome, Italy",
-    dedicated: "2019-03-10",
+    dedicated: "2019, March, 10",
     area: 40000,
-    imageUrl: "https://assets.churchofjesuschrist.org/9d/4b/9d4b5b8bdb11ecf3bfcce5b0f70f8b9b2ac9e4a5/rome_italy_temple.jpeg"
-  },
-  {
-    templeName: "Laie Hawaii Temple",
-    location: "Laie, Hawaii, USA",
-    dedicated: "1919-11-27",
-    area: 42100,
-    imageUrl: "https://assets.churchofjesuschrist.org/2a/6e/2a6ef58adb11ecf3bfcce5b0f70f8b9b7a1cf2a5/laie_hawaii_temple.jpeg"
+    imageUrl:
+      "https://churchofjesuschristtemples.org/assets/img/temples/rome-italy-temple/rome-italy-temple-2616.jpg"
   }
+  
 ];
 
-// --- DOM elements ---
-const cardsContainer = document.querySelector("#templeCards");
+const templeContainer = document.querySelector("#temples");
 const pageTitle = document.querySelector("#pageTitle");
 const menuButton = document.querySelector("#menu");
 const nav = document.querySelector(".navigation");
 
-// --- Create and show temple cards ---
-function displayTemples(list) {
-  cardsContainer.innerHTML = "";
-
-  list.forEach((temple) => {
-    const card = document.createElement("article");
-    card.classList.add("temple-card");
-
-    const img = document.createElement("img");
-    img.src = temple.imageUrl;
-    img.alt = temple.templeName;
-    img.loading = "lazy";
-
-    const body = document.createElement("div");
-    body.classList.add("card-body");
-
-    const name = document.createElement("h2");
-    name.textContent = temple.templeName;
-
-    const loc = document.createElement("p");
-    loc.innerHTML = `<strong>Location:</strong> ${temple.location}`;
-
-    const ded = document.createElement("p");
-    ded.innerHTML = `<strong>Dedicated:</strong> ${temple.dedicated}`;
-
-    const area = document.createElement("p");
-    area.innerHTML = `<strong>Area:</strong> ${temple.area.toLocaleString()} sq ft`;
-
-    body.appendChild(name);
-    body.appendChild(loc);
-    body.appendChild(ded);
-    body.appendChild(area);
-
-    card.appendChild(img);
-    card.appendChild(body);
-
-    cardsContainer.appendChild(card);
-  });
+function getDedicatedYear(dedicatedString) {
+  const year = parseInt(dedicatedString.split(",")[0], 10);
+  return Number.isNaN(year) ? 0 : year;
 }
 
-// --- Filters ---
-function filterTemples(type) {
+function createTempleCard(temple) {
+  const card = document.createElement("article");
+  card.className = "temple-card";
+
+  const img = document.createElement("img");
+  img.src = temple.imageUrl;
+  img.alt = temple.templeName;
+  img.loading = "lazy";
+
+  const body = document.createElement("div");
+  body.className = "card-body";
+
+  const h2 = document.createElement("h2");
+  h2.textContent = temple.templeName;
+
+  const loc = document.createElement("p");
+  loc.innerHTML = `<strong>Location:</strong> ${temple.location}`;
+
+  const ded = document.createElement("p");
+  ded.innerHTML = `<strong>Dedicated:</strong> ${temple.dedicated}`;
+
+  const area = document.createElement("p");
+  area.innerHTML = `<strong>Area:</strong> ${temple.area.toLocaleString()} sq ft`;
+
+  body.append(h2, loc, ded, area);
+  card.append(img, body);
+
+  return card;
+}
+
+function displayTemples(templeList) {
+  templeContainer.innerHTML = "";
+  templeList.forEach(t => templeContainer.appendChild(createTempleCard(t)));
+}
+
+function setTitle(title) {
+  pageTitle.textContent = title;
+}
+
+function filterTemples(filterType) {
   let filtered = temples;
 
-  if (type === "old") {
-    filtered = temples.filter(t => new Date(t.dedicated).getFullYear() < 1900);
-    pageTitle.textContent = "Old";
-  } else if (type === "new") {
-    filtered = temples.filter(t => new Date(t.dedicated).getFullYear() > 2000);
-    pageTitle.textContent = "New";
-  } else if (type === "large") {
+  if (filterType === "old") {
+    filtered = temples.filter(t => getDedicatedYear(t.dedicated) < 1900);
+    setTitle("Old");
+  } else if (filterType === "new") {
+    filtered = temples.filter(t => getDedicatedYear(t.dedicated) > 2000);
+    setTitle("New");
+  } else if (filterType === "large") {
     filtered = temples.filter(t => t.area > 90000);
-    pageTitle.textContent = "Large";
-  } else if (type === "small") {
+    setTitle("Large");
+  } else if (filterType === "small") {
     filtered = temples.filter(t => t.area < 10000);
-    pageTitle.textContent = "Small";
+    setTitle("Small");
   } else {
-    pageTitle.textContent = "Home";
+    setTitle("Home");
   }
 
   displayTemples(filtered);
 }
 
-// --- Nav click handling ---
 document.querySelectorAll(".navigation a").forEach(link => {
   link.addEventListener("click", (e) => {
     e.preventDefault();
-    const type = link.dataset.filter;
-    filterTemples(type);
+    const filterType = link.dataset.filter;
+    filterTemples(filterType);
 
-    // close menu on mobile after click
     nav.classList.remove("show");
     menuButton.setAttribute("aria-expanded", "false");
   });
 });
 
-// --- Hamburger menu toggle ---
 menuButton.addEventListener("click", () => {
   nav.classList.toggle("show");
-  const expanded = nav.classList.contains("show");
-  menuButton.setAttribute("aria-expanded", expanded ? "true" : "false");
+  const isOpen = nav.classList.contains("show");
+  menuButton.setAttribute("aria-expanded", isOpen ? "true" : "false");
 });
 
-// --- Footer dates ---
 document.querySelector("#year").textContent = new Date().getFullYear();
 document.querySelector("#lastModified").textContent = `Last Modified: ${document.lastModified}`;
 
-// Initial load
 displayTemples(temples);
