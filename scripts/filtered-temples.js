@@ -56,7 +56,6 @@ const temples = [
       "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/mexico-city-mexico/400x250/mexico-city-temple-exterior-1518361-wallpaper.jpg"
   },
 
-  // ✅ Add at least 3 more temple objects:
   {
     templeName: "Salt Lake Utah",
     location: "Salt Lake City, Utah, United States",
@@ -166,5 +165,7 @@ menuButton.addEventListener("click", () => {
 
 document.querySelector("#year").textContent = new Date().getFullYear();
 document.querySelector("#lastModified").textContent = `Last Modified: ${document.lastModified}`;
+document.querySelector(".navigation").classList.toggle("show");
+
 
 displayTemples(temples);
