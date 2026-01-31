@@ -10,7 +10,7 @@ body {
   font-family: "Roboto", sans-serif;
   margin: 0;
 
-  /* Sticky footer */
+  
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -50,7 +50,7 @@ header {
   cursor: pointer;
 }
 
-/* ✅ NAV (corrected) */
+
 nav.navigation {
   display: none;
   flex-direction: column;
@@ -76,7 +76,7 @@ main {
   max-width: 1100px;
   margin: 0 auto;
   padding: 1rem 1.25rem 2rem;
-  flex: 1; /* push footer down */
+  flex: 1; 
 }
 
 main h1 {
@@ -85,7 +85,7 @@ main h1 {
   font-size: 2rem;
 }
 
-/* Container grid for cards */
+
 .album {
   display: grid;
   grid-template-columns: 1fr;
@@ -94,7 +94,7 @@ main h1 {
   margin: 0 auto;
 }
 
-/* Temple card */
+
 .temple-card {
   border: 1px solid #ddd;
   border-radius: 10px;
