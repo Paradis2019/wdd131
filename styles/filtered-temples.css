@@ -1,0 +1,144 @@
+* { box-sizing: border-box; }
+
+html, body { height: 100%; }
+
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+
+  /* sticky footer */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  background-color: #4b1366;
+  color: white;
+  width: 100%;
+}
+
+.header-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 1rem 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.site-title {
+  margin: 0;
+  color: white;
+  font-size: 1.4rem;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+#menu {
+  font-size: 2rem;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.navigation {
+  display: none;
+  flex-direction: column;
+  background-color: #4b1366;
+}
+
+.navigation.show { display: flex; }
+
+.navigation a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 0.75rem 1.25rem;
+}
+
+.navigation a:hover { text-decoration: underline; }
+
+main {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 1rem 1.25rem 2rem;
+  flex: 1; /* sticky footer push */
+}
+
+main h1 {
+  text-align: center;
+  margin: 1.5rem 0 2.5rem;
+  font-size: 2rem;
+}
+
+/* Cards grid */
+.album {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* Temple card */
+.temple-card {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  background: #fff;
+}
+
+.temple-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.temple-card .card-body {
+  padding: 0.75rem 1rem 1rem;
+}
+
+.temple-card h2 {
+  margin: 0.25rem 0 0.5rem;
+  font-size: 1.1rem;
+  color: #4b1366;
+}
+
+.temple-card p {
+  margin: 0.25rem 0;
+  font-size: 0.95rem;
+}
+
+footer {
+  background: #3b0a57;
+  color: #fff;
+  text-align: center;
+  padding: 0.75rem 1rem;
+  width: 100%;
+}
+
+footer p {
+  margin: 0.25rem 0;
+  font-size: 0.9rem;
+}
+
+@media (min-width: 700px) {
+  #menu { display: none; }
+
+  .navigation {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+    background: none;
+  }
+
+  .navigation a { padding: 0; }
+
+  .album {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+}
