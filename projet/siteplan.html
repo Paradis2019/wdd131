@@ -1,133 +1,217 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Website Planning Document | W05 Site Plan</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Website Planning Document | Software Business Development</title>
 
-  <!-- Google Fonts -->
+  <!-- Fonts (2 total, within requirement) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
 
-  <!-- External CSS -->
-  <link rel="stylesheet" href="styles/siteplan.css">
+  <link rel="stylesheet" href="styles/siteplan.css" />
 </head>
 
 <body>
-  <header>
-    <div class="wrap brand">
-      <div class="logo">WP</div>
-      <div>
-        <h1>W05 Project: Website Planning Document</h1>
-        <p>Living site plan for: <strong>[Your Site Name]</strong></p>
+  <header class="site-header">
+    <div class="wrap header-grid">
+      <div class="brand">
+        <img
+          class="brand-logo"
+          src="images/awaken-logo.jpeg"
+          alt="Awaken logo"
+          width="180"
+          height="120"
+        />
+        <div class="brand-text">
+          <p class="kicker">W05 Project</p>
+          <h1 class="title">Website Planning Document</h1>
+          <p class="subtitle">
+            Project Site: <strong>Software Business Development</strong>
+          </p>
+        </div>
+      </div>
+
+      <div class="header-badge" aria-label="Project topic badge">
+        <p class="badge-title">Subject</p>
+        <p class="badge-value">Software Business Development</p>
+        <p class="badge-sub">IT • Software • AI</p>
       </div>
     </div>
   </header>
 
-  <main class="wrap">
+  <main class="wrap content">
 
-    <section>
-      <span class="label">Overview</span>
+    <section class="card" id="overview">
+      <p class="label">Overview</p>
+      <h2>Project Overview</h2>
       <p>
-        This document outlines the plan for my website project. It serves as a blueprint
-        for design, structure, and content, and will evolve as the project progresses.
+        Planning is a critical step in the success of any project. This website plan serves as a blueprint
+        for designing and developing my website. It is a living document and may change as the project
+        progresses. It helps communicate my goals, design choices, and content structure.
       </p>
     </section>
 
-    <section>
-      <span class="label">Site Name</span>
-      <h2>[Your Site Name]</h2>
-      <p><strong>Reason:</strong> [Explain why this name fits your site and audience.]</p>
-      <p><strong>Optional domain:</strong> <code>[example-domain.com]</code></p>
+    <section class="card" id="site-name">
+      <p class="label">Site Name</p>
+      <h2>Software Business Development</h2>
+      <p>
+        <strong>Why I chose this name:</strong>
+        The name clearly reflects the focus of the website—how software businesses are planned, built, and grown.
+        It’s professional, easy to understand, and matches the target audience interested in software + entrepreneurship.
+      </p>
+      <p><strong>Optional domain:</strong> <code>softwarebusinessdev.com</code> (not required)</p>
+      <p>
+        <strong>Logo:</strong> The site branding will use a futuristic tech style inspired by the Awaken logo
+        (dark space background with blue/cyan glow accents).
+      </p>
     </section>
 
-    <section>
-      <span class="label">Site Purpose</span>
+    <section class="card" id="purpose">
+      <p class="label">Site Purpose</p>
+      <h2>Purpose & Scope</h2>
       <p>
-        [Describe what the site provides, who it is for, and what users can do on it.]
+        The website will be an informational site focused on how software businesses are planned, built, and grown.
+        Planned content includes an overview of software business models, the software development lifecycle,
+        basic marketing and monetization strategies, and tools commonly used in software business.
+      </p>
+      <p>
+        The site will include interactive elements using JavaScript, such as navigation menus, content filters,
+        or simple calculators related to project planning or costs.
       </p>
       <ul>
-        <li>Main goal of the site</li>
-        <li>Primary content or services</li>
-        <li>Main call to action</li>
+        <li><strong>Primary goal:</strong> Provide clear, beginner-friendly guidance for building a software business.</li>
+        <li><strong>Key content:</strong> Business models, SDLC, marketing/monetization, tools & resources.</li>
+        <li><strong>Interactive features:</strong> Filters, expandable sections, and a simple cost/planning calculator.</li>
       </ul>
     </section>
 
-    <section>
-      <span class="label">Scenarios</span>
-      <ul>
-        <li>How do I find information about ___?</li>
-        <li>Where can I contact ___?</li>
-      </ul>
+    <section class="card" id="scenarios">
+      <p class="label">Scenarios</p>
+      <h2>Target Audience Questions</h2>
+      <p>These scenarios represent questions that visitors might have and the site should answer:</p>
+      <ol>
+        <li>Which software business model is best for my idea (SaaS, subscription, freemium, licensing)?</li>
+        <li>How much might it cost or how long might it take to build a basic version (MVP) of my product?</li>
+        <li>What marketing strategies can I use to launch a new software product on a small budget?</li>
+      </ol>
     </section>
 
-    <section>
-      <span class="label">Color Schema</span>
-      <p>The site uses the following colors, which are applied to this document:</p>
+    <section class="card" id="colors">
+      <p class="label">Color Schema</p>
+      <h2>Logo-Based Color Palette</h2>
+      <p>
+        The color scheme is inspired by the Awaken logo and uses a dark “space” background with blue and cyan glow accents.
+        This site plan uses the same colors for consistency and branding.
+      </p>
 
       <div class="swatches">
         <div class="swatch">
-          <div class="chip primary"></div>
-          <p><strong>Primary:</strong> #1D4ED8 – headings, links, accents</p>
+          <div class="chip chip-bg" aria-hidden="true"></div>
+          <p><strong>Background:</strong> <code>#070A1F</code> — page background</p>
         </div>
+
         <div class="swatch">
-          <div class="chip accent"></div>
-          <p><strong>Accent:</strong> #F59E0B – highlights and focus states</p>
+          <div class="chip chip-surface" aria-hidden="true"></div>
+          <p><strong>Surface:</strong> <code>#11183F</code> — cards/sections</p>
+        </div>
+
+        <div class="swatch">
+          <div class="chip chip-secondary" aria-hidden="true"></div>
+          <p><strong>Secondary:</strong> <code>#2F6BFF</code> — links, buttons, headings accents</p>
+        </div>
+
+        <div class="swatch">
+          <div class="chip chip-accent" aria-hidden="true"></div>
+          <p><strong>Accent:</strong> <code>#4FD1FF</code> — highlights, focus states, hover effects</p>
+        </div>
+
+        <div class="swatch">
+          <div class="chip chip-text" aria-hidden="true"></div>
+          <p><strong>Text:</strong> <code>#EAF2FF</code> — readable text on dark background</p>
         </div>
       </div>
     </section>
 
-    <section>
-      <span class="label">Typography</span>
+    <section class="card" id="typography">
+      <p class="label">Typography</p>
+      <h2>Fonts & Usage</h2>
+      <p>Font choices (2 total):</p>
 
-      <div class="type-card heading-font">
-        <h3>Montserrat</h3>
-        <p>Used for headings and section titles.</p>
-      </div>
+      <div class="type-grid">
+        <div class="type-card">
+          <h3 class="font-heading">Montserrat</h3>
+          <p class="muted">Used for headings (H1/H2/H3), titles, and section labels.</p>
+          <p class="font-heading sample">Example Heading: Build • Launch • Grow</p>
+        </div>
 
-      <div class="type-card body-font">
-        <h3>Roboto</h3>
-        <p>Used for body text and general content.</p>
+        <div class="type-card">
+          <h3 class="font-body">Roboto</h3>
+          <p class="muted">Used for body text, lists, and general reading content.</p>
+          <p class="font-body sample">Example body text: clear, modern, and easy to read.</p>
+        </div>
       </div>
     </section>
 
-    <section>
-      <span class="label">Wireframes</span>
+    <section class="card" id="wireframes">
+      <p class="label">Wireframes</p>
+      <h2>Home Page Layout</h2>
+      <p>
+        Wireframes show layout relationships in mobile and desktop views.
+        Boxes represent content blocks (not final design).
+      </p>
 
-      <div class="wireframes">
+      <div class="wireframe-grid">
         <div class="wf">
-          <h3>Mobile View</h3>
-          <div class="box">Header / Menu</div>
-          <div class="box">Hero Section</div>
-          <div class="box">Main Content</div>
+          <h3>Mobile Wireframe</h3>
+          <div class="box">Header (Logo + Menu)</div>
+          <div class="box">Hero (Title + CTA)</div>
+          <div class="box">Topic Cards (stacked)</div>
+          <div class="box">Interactive Tool (Calculator preview)</div>
+          <div class="box">Resources / Tools</div>
           <div class="box">Footer</div>
         </div>
 
         <div class="wf">
-          <h3>Desktop View</h3>
-          <div class="box">Header + Navigation</div>
-          <div class="box">Hero</div>
-          <div class="box">Content Grid</div>
+          <h3>Desktop Wireframe</h3>
+          <div class="box">Header (Logo + Navigation)</div>
+          <div class="box">Hero (Intro + CTA + Graphic)</div>
+
+          <div class="grid2">
+            <div class="box">Featured Topic 1</div>
+            <div class="box">Featured Topic 2</div>
+          </div>
+
+          <div class="grid2">
+            <div class="box">Main Content (Articles)</div>
+            <div class="box">Sidebar (Tools/Quick Links)</div>
+          </div>
+
           <div class="box">Footer</div>
         </div>
       </div>
     </section>
 
-    <section>
-      <span class="label">Testing</span>
+    <section class="card" id="testing">
+      <p class="label">Testing</p>
+      <h2>Self Check Plan</h2>
       <ul>
-        <li>HTML validation (W3C)</li>
-        <li>Accessibility (Lighthouse)</li>
-        <li>Color contrast checks</li>
-        <li>SEO and performance review</li>
+        <li><strong>Validation:</strong> W3C HTML & CSS validation</li>
+        <li><strong>Accessibility:</strong> Lighthouse + keyboard navigation + alt text</li>
+        <li><strong>Best Practices:</strong> Lighthouse best practices checks</li>
+        <li><strong>Color Contrast:</strong> Ensure readable contrast on dark theme</li>
+        <li><strong>SEO + Performance:</strong> Lighthouse SEO/performance scores</li>
       </ul>
+      <p class="muted"><strong>Notes / Fixes:</strong> Add any changes you made after testing here.</p>
     </section>
 
   </main>
 
-  <footer>
-    <p>WDD131 Site Plan &copy; <span id="year"></span></p>
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <p>WDD131 • Site Plan • <span id="year"></span></p>
+    </div>
   </footer>
 
   <script>
