@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Website Planning Document | W05 Site Plan</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="styles/siteplan.css">
+</head>
+
+<body>
+  <header>
+    <div class="wrap brand">
+      <div class="logo">WP</div>
+      <div>
+        <h1>W05 Project: Website Planning Document</h1>
+        <p>Living site plan for: <strong>[Your Site Name]</strong></p>
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap">
+
+    <section>
+      <span class="label">Overview</span>
+      <p>
+        This document outlines the plan for my website project. It serves as a blueprint
+        for design, structure, and content, and will evolve as the project progresses.
+      </p>
+    </section>
+
+    <section>
+      <span class="label">Site Name</span>
+      <h2>[Your Site Name]</h2>
+      <p><strong>Reason:</strong> [Explain why this name fits your site and audience.]</p>
+      <p><strong>Optional domain:</strong> <code>[example-domain.com]</code></p>
+    </section>
+
+    <section>
+      <span class="label">Site Purpose</span>
+      <p>
+        [Describe what the site provides, who it is for, and what users can do on it.]
+      </p>
+      <ul>
+        <li>Main goal of the site</li>
+        <li>Primary content or services</li>
+        <li>Main call to action</li>
+      </ul>
+    </section>
+
+    <section>
+      <span class="label">Scenarios</span>
+      <ul>
+        <li>How do I find information about ___?</li>
+        <li>Where can I contact ___?</li>
+      </ul>
+    </section>
+
+    <section>
+      <span class="label">Color Schema</span>
+      <p>The site uses the following colors, which are applied to this document:</p>
+
+      <div class="swatches">
+        <div class="swatch">
+          <div class="chip primary"></div>
+          <p><strong>Primary:</strong> #1D4ED8 – headings, links, accents</p>
+        </div>
+        <div class="swatch">
+          <div class="chip accent"></div>
+          <p><strong>Accent:</strong> #F59E0B – highlights and focus states</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <span class="label">Typography</span>
+
+      <div class="type-card heading-font">
+        <h3>Montserrat</h3>
+        <p>Used for headings and section titles.</p>
+      </div>
+
+      <div class="type-card body-font">
+        <h3>Roboto</h3>
+        <p>Used for body text and general content.</p>
+      </div>
+    </section>
+
+    <section>
+      <span class="label">Wireframes</span>
+
+      <div class="wireframes">
+        <div class="wf">
+          <h3>Mobile View</h3>
+          <div class="box">Header / Menu</div>
+          <div class="box">Hero Section</div>
+          <div class="box">Main Content</div>
+          <div class="box">Footer</div>
+        </div>
+
+        <div class="wf">
+          <h3>Desktop View</h3>
+          <div class="box">Header + Navigation</div>
+          <div class="box">Hero</div>
+          <div class="box">Content Grid</div>
+          <div class="box">Footer</div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <span class="label">Testing</span>
+      <ul>
+        <li>HTML validation (W3C)</li>
+        <li>Accessibility (Lighthouse)</li>
+        <li>Color contrast checks</li>
+        <li>SEO and performance review</li>
+      </ul>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>WDD131 Site Plan &copy; <span id="year"></span></p>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
