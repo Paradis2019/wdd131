@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Popol Elonda">
+  <meta name="description" content="Review submission confirmation page.">
+  <title>Review Submitted</title>
+  <link rel="stylesheet" href="styles/form.css">
+</head>
+
+<body>
+  <header class="page-header">
+    <h1>Thank You!</h1>
+  </header>
+
+  <main class="wrap">
+    <section class="card">
+      <h2>Review submitted successfully.</h2>
+      <p class="big">
+        Total reviews submitted on this browser: <strong><span id="reviewCount">0</span></strong>
+      </p>
+
+      <div class="summary" aria-label="Submission summary">
+        <h3>Your Submission (from URL)</h3>
+        <dl id="submissionDetails"></dl>
+      </div>
+
+      <p><a class="link" href="form.html">Submit another review</a></p>
+    </section>
+  </main>
+
+  <footer class="page-footer">
+    <p>© <span id="year"></span> Popol Elonda • Madagascar</p>
+    <p>Last Modification: <span id="lastModified"></span></p>
+  </footer>
+
+  <script src="scripts/review.js" defer></script>
+</body>
+</html>
