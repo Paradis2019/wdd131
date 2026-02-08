@@ -1,4 +1,4 @@
-// Product array provided in the assignment instructions. :contentReference[oaicite:1]{index=1}
+// Product array 
 const products = [
   { id: "fc-1888", name: "flux capacitor", averagerating: 4.5 },
   { id: "fc-2050", name: "power laces", averagerating: 4.7 },
@@ -17,8 +17,8 @@ function populateProducts() {
 
   products.forEach((p) => {
     const opt = document.createElement("option");
-    opt.value = p.id;        // requirement: use id for value :contentReference[oaicite:2]{index=2}
-    opt.textContent = p.name; // requirement: name for display :contentReference[oaicite:3]{index=3}
+    opt.value = p.id;        
+    opt.textContent = p.name; 
     select.appendChild(opt);
   });
 }
