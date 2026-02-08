@@ -15,7 +15,7 @@ function renderSubmissionDetails() {
   const params = new URLSearchParams(window.location.search);
   const dl = document.getElementById("submissionDetails");
 
-  // Build a simple list of submitted values (GET query string)
+  // Build a simple list of submitte
   const fields = [
     ["Product", params.get("productName")],
     ["Rating", params.get("overallRating")],
@@ -38,5 +38,5 @@ function renderSubmissionDetails() {
 }
 
 setFooterDates();
-incrementReviewCounter(); // requirement: increment each time review.html loads :contentReference[oaicite:4]{index=4}
+incrementReviewCounter(); 
 renderSubmissionDetails();
